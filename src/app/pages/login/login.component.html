@@ -1,0 +1,37 @@
+<body>
+  <div class="container">
+    <form id="my__form" class="my__form">
+      <div class="form__login">
+        <h1>Faça o seu Login</h1>
+
+        <input
+          class="form"
+          type="email"
+          id="email"
+          placeholder="Digite seu Email"
+          required
+        />
+        <input
+          class="form"
+          type="password"
+          id="password"
+          placeholder="Digite sua Senha"
+          required
+          minlength="6"
+        />
+
+        <input
+          id="submit__button"
+          class="button"
+          type="submit"
+          value="Enviar"
+        />
+      </div>
+
+      <div class="registration">
+        <a [routerLink]="['/registration']">Cadastre-se</a>
+        <a [routerLink]="['/recover-password']">Esqueci minha Senha</a>
+      </div>
+    </form>
+  </div>
+</body>
