@@ -2,23 +2,25 @@
   <div class="container">
     <form class="form" id="form">
       <div class="form__control success">
-        <label for="qtdCombustivel">QTD Consumo Combustivel</label>
+        <label for="qtdCombustivel">Gasto Combustivel</label>
         <input
           class="input"
           type="text"
           id="qtdCombustivel"
-          placeholder="Digite o seu consumo"
+          placeholder="Digite o valor"
+          required
         />
         <i><img src="assets/img/success-icon.svg" alt="" /></i>
         <i><img src="assets/img/error-icon.svg" alt="" /></i>
         <small>Error message</small>
 
-        <label for="faturamentoDia">Faturamento Dia</label>
+        <label for="faturamentoDia">Faturamento do Dia</label>
         <input
           class="input"
           type="text"
           id="faturamentoDia"
           placeholder="Digite seu Ganho"
+          required
         />
         <i><img src="assets/img/success-icon.svg" alt="" /></i>
         <i><img src="assets/img/error-icon.svg" alt="" /></i>
@@ -30,7 +32,9 @@
           type="text"
           id="kmsRodados"
           placeholder="Digite o quanto kms andou"
+          required
         />
+        
         <i
           ><img class="img-sucess" src="assets/img/success-icon.svg" alt=""
         /></i>
@@ -43,12 +47,14 @@
           type="text"
           id="outrosGastos"
           placeholder="Outros Gastos"
+          required
         />
         <i><img src="assets/img/success-icon.svg" alt="" /></i>
         <i><img src="assets/img/error-icon.svg" alt="" /></i>
         <small>Error message</small>
 
-        <button class="botao">Cadastrar</button>
+        <button class="botao">Enviar</button>
+        <a [routerLink]="['/login']">Inicio</a>
       </div>
     </form>
   </div>
