@@ -1,20 +1,10 @@
-body {
-  background-image: linear-gradient(1000deg, black, white);
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 .container {
+  height: 50vh;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.9);
   padding: 80px;
-  border-radius: 50px;
-  color: white;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px #ccc;
 }
 
 .form__login {
@@ -33,7 +23,7 @@ body {
 h1 {
   font-size: 1.8rem;
   text-align: center;
-  color: yellow;
+  color: rgb(248, 229, 89);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
@@ -47,12 +37,12 @@ h1 {
 }
 
 .button {
-  background-color: rgb(242, 255, 0);
+  background-color: rgb(248, 229, 89);
   border: none;
   padding: 15px;
   width: 100%;
   border-radius: 15px;
-  color: black;
+  color: rgb(51, 41, 65);
   font-size: 1.2rem;
 }
 
@@ -61,7 +51,7 @@ h1 {
 }
 
 .container a {
-  color: white;
+  color: rgb(248, 229, 89);
   text-decoration: none;
   font-size: 1.1rem;
 }
